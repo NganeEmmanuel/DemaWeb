@@ -140,10 +140,10 @@ DermaWeb/
 
 | Section                      | Screenshot                                        |
 | ---------------------------- | ------------------------------------------------- |
-| **Home Page**                | ![Home Page](src/assets/screenshots/home.png)     |
-| **Documentation Page**       | ![Docs Page](src/assets/screenshots/docs.png)     |
-| **Upload / Prediction Page** | ![About Page](src/assets/screenshots/about.png) |
-| **Responsive View (Mobile)** | ![Contact View](src/assets/screenshots/contact.png) |
+| **Home Page**                | ![Home Page](dermaweb/src/assets/screenshots/home.png)     |
+| **Documentation Page**       | ![Docs Page](dermaweb/src/assets/screenshots/docs.png)     |
+| **Upload / Prediction Page** | ![About Page](dermaweb/src/assets/screenshots/about.png) |
+| **Responsive View (Mobile)** | ![Contact View](dermaweb/src/assets/screenshots/contact.png) |
 
 > 💡 You can also embed animated GIFs or YouTube demo links here.
 
