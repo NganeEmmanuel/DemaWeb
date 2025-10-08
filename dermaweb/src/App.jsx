@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Docs from './pages/Docs';
 import Contact from './pages/Contact';
+import { Toaster } from "react-hot-toast";
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
           <Route path='/contact' element={<Contact />} />
         </Routes>
       </MainLayout>
+      <Toaster position="top-right" />
     </BrowserRouter>
   );
 }
