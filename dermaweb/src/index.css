@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+
+/* default CSS variables will be set by theme.js, but set fallbacks here */
+:root {
+  --color-primary: #0A3D91;
+  --color-primary-2: #1F5FBF;
+  --color-bg: #FFFFFF;
+  --color-surface: #F8FAFF;
+  --color-text: #0A0A0A;
+  --muted: #666E85;
+}
+
+/* utility to help text colors use tokens */
+.text-primary { color: var(--color-primary); }
+.bg-primary { background: var(--color-primary); }
+
+/* small screens: adjust root font-size if desired */
+/* accessible high-contrast focus states */
+:focus { outline: 3px solid rgba(31,95,191,0.18); outline-offset: 2px; }
+
+/* optional dark-theme helper - theme.js will toggle .theme-dark on root */
+.theme-dark {
+  color-scheme: dark;
+}
+
+/* ensure images and media scale nicely */
+img { display: block; max-width: 100%; height: auto; }
