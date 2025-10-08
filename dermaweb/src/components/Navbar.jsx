@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { applyTheme } from '../utils/theme';
+import { MdLightMode, MdDarkMode  } from "react-icons/md";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -55,9 +56,9 @@ export default function Navbar() {
             <button
               onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
               aria-label="Toggle theme"
-              className="p-2 rounded-md border border-transparent hover:border-[var(--color-primary)]/20"
+              className="p-2 rounded-md border shadow-lg border-transparent hover:border-[var(--color-primary)]/20"
             >
-              {theme === 'light' ? '🌤️' : '🌙'}
+              {theme === 'light' ? <MdLightMode size={30} /> : <MdDarkMode size={30} />}
             </button>
 
             {/* Mobile menu button */}
