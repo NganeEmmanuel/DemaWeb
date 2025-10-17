@@ -15,10 +15,15 @@ export default function App() {
       <MainLayout>
         <Routes>
           <Route path='/' element={<Home />} />
+          <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
+          <Route path='https://dema-web.vercel.app/about' element={<About />} />
           <Route path='/docs' element={<Docs />} />
+          <Route path='https://dema-web.vercel.app/docs' element={<Docs />} />
           <Route path='/contact' element={<Contact />} />
+          <Route path='https://dema-web.vercel.app/contact' element={<Contact />} />
           <Route path='/download' element={<DownloadPage />} />
+          <Route path='https://dema-web.vercel.app/download' element={<DownloadPage />} />
         </Routes>
       </MainLayout>
       <Toaster position="top-right" />
