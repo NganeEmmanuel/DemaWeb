@@ -137,7 +137,7 @@ export default function Docs() {
               <li>
                 Visit the official app page:{" "}
                 <a
-                  href="https://dermaai.com/download"
+                  href="/download"
                   target="_blank"
                   rel="noreferrer"
                   className="text-blue-500 hover:underline"

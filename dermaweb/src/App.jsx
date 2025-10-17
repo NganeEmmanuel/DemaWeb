@@ -7,6 +7,7 @@ import About from './pages/About';
 import Docs from './pages/Docs';
 import Contact from './pages/Contact';
 import { Toaster } from "react-hot-toast";
+import DownloadPage from './pages/DownloadPage';
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
           <Route path='/about' element={<About />} />
           <Route path='/docs' element={<Docs />} />
           <Route path='/contact' element={<Contact />} />
+          <Route path='/download' element={<DownloadPage />} />
         </Routes>
       </MainLayout>
       <Toaster position="top-right" />

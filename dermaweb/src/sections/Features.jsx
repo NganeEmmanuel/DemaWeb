@@ -18,7 +18,7 @@ const features = [
     icon: <FaLock className="w-12 h-12 text-primary" />,
     title: "Privacy First",
     description:
-      "Your data is protected using strong encryption and privacy-respecting local processing.",
+      "Your data is protected using privacy-respecting local processing.",
   },
   {
     icon: <FaShieldAlt className="w-12 h-12 text-primary" />,

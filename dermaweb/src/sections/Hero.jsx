@@ -32,7 +32,7 @@ export default function Hero() {
             </p>
 
             <div className="mt-8 flex flex-col sm:flex-row gap-3">
-              <a href="#download" className="inline-flex items-center justify-center px-5 py-3 rounded-md text-white font-medium" style={{ background: 'linear-gradient(90deg,var(--color-primary),var(--color-primary-2))' }}>
+              <a href="/download" className="inline-flex items-center justify-center px-5 py-3 rounded-md text-white font-medium" style={{ background: 'linear-gradient(90deg,var(--color-primary),var(--color-primary-2))' }}>
                 Download App
               </a>
 
@@ -42,8 +42,8 @@ export default function Hero() {
             </div>
 
             <div className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-4">
-              <Stat label="Accuracy" value="95%" />
-              <Stat label="Scans" value="10k+" />
+              <Stat label="Accuracy" value="75%" />
+              <Stat label="Scans" value="1k+" />
               <Stat label="Response" value="≤3s" />
               <Stat label="Privacy" value="On-device" />
             </div>
@@ -66,7 +66,7 @@ export default function Hero() {
                 <img src={heroPlaceholder} alt="mobile mock" className="w-full h-auto object-cover" />
               </div>
             </div>
-            <p className="mt-4 text-sm text-[var(--muted)]">Mock demo image — replace with generated cinematic hero/video when ready.</p>
+            <p className="mt-4 text-sm text-[var(--muted)]">DermaAI is easy to use, easy to understand, and keeps your data private</p>
           </div>
         </div>
       </div>

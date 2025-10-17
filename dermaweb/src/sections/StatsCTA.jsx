@@ -11,8 +11,8 @@ export default function StatsCTA() {
         </div>
 
         <div id="download" className="flex gap-3">
-          <a href="/downloads/dermaai-mobile.apk" className="px-4 py-2 rounded-md text-white font-medium" style={{ background: 'linear-gradient(90deg,var(--color-primary),var(--color-primary-2))' }}>Download Mobile</a>
-          <a href="/downloads/dermaai-cli.zip" className="px-4 py-2 rounded-md border border-[var(--color-primary)] text-[var(--color-primary)]">Download CLI</a>
+          <a href="/download" className="px-4 py-2 rounded-md text-white font-medium" style={{ background: 'linear-gradient(90deg,var(--color-primary),var(--color-primary-2))' }}>Download Mobile</a>
+          <a href="/download" className="px-4 py-2 rounded-md border border-[var(--color-primary)] text-[var(--color-primary)]">Download CLI</a>
         </div>
       </div>
     </section>
