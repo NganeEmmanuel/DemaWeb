@@ -89,7 +89,7 @@ function MobileMenu() {
           <NavLink to="/about" className="block px-4 py-2" onClick={() => setOpen(false)}>About</NavLink>
           <NavLink to="/docs" className="block px-4 py-2" onClick={() => setOpen(false)}>Docs</NavLink>
           <NavLink to="/contact" className="block px-4 py-2" onClick={() => setOpen(false)}>Contact</NavLink>
-          <a href="#download" className="block px-4 py-2 text-white" style={{ background: 'linear-gradient(90deg,var(--color-primary),var(--color-primary-2))' }}>Get the App</a>
+          <a href="/download" className="block px-4 py-2 text-white" style={{ background: 'linear-gradient(90deg,var(--color-primary),var(--color-primary-2))' }}>Get the App</a>
         </div>
       )}
     </>

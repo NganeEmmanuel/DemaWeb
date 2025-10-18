@@ -150,8 +150,7 @@ export default function Docs() {
                 trusted sources if prompted.
               </li>
               <li>
-                Open the app and sign in using your DermaAI account or create a
-                new one.
+                Open the app and ans start using. The app require no sign ups or sign ins as your information is stored localy
               </li>
             </ol>
           </section>
@@ -166,9 +165,13 @@ export default function Docs() {
             </h2>
             <p>Once installed, follow these steps to use the DermaAI app:</p>
             <ul className="list-disc pl-6 mt-3 space-y-2">
-              <li>Upload a clear photo of your skin lesion.</li>
-              <li>Wait a few seconds while the AI analyzes your image.</li>
-              <li>View your diagnosis and recommended next steps instantly.</li>
+              <li>Launch the app and it will take you to the home page. It is blank for the first time. This is where the history for your diagnosis will be shown</li>
+              <li>Navigate to <strong>diagnose page (+)</strong> using the nave menu at the bottom</li>
+              <li>Upload a clear photo of your skin lesion. You can take a new photo or use already existing photo</li>
+              <li>After uploading, click the <strong>Confirm</strong> button to run the analysis</li>
+              <li>Wait a few seconds while the AI analyzes your image. For the first time after opening the app, this can take upto 3 mins to display result. Subsequent queries will take less than 5 seconds</li>
+              <li>The result will be displayed along with the confidence score. Confidence score tells you how certain the AI thinks of the result it gave you. It is not always acurrate and these result should not be taken as a final medical diagnosis. Always contact a dermatologist for proper medical attentions and diagnosis.</li>
+              <li>You can view your diagnosis and recommended next steps instantly in the home page.</li>
             </ul>
           </section>
 
@@ -185,19 +188,32 @@ export default function Docs() {
               detections directly from the command line.
             </p>
             <ol className="list-decimal pl-6 space-y-2 mt-3">
-              <li>Ensure Python 3.8+ is installed on your system.</li>
               <li>
-                Run:{" "}
-                <code className="bg-gray-200 dark:bg-gray-800 px-2 py-1 rounded text-white">
-                  pip install dermaai
-                </code>
+                Visit the official app page:{" "}
+                <a
+                  href="/download"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-blue-500 hover:underline"
+                >
+                  DermaAI App
+                </a>
               </li>
               <li>
-                Verify installation:{" "}
-                <code className="bg-gray-200 dark:bg-gray-800 px-2 py-1 rounded text-white">
-                  dermaai --version
-                </code>
+                Tap <strong>Download</strong> for CLI
               </li>
+              <li>
+                Once downlaoded, create a folder in your program files directory called <strong>DermaAI</strong>
+              </li>
+              <li>Copy the downloaded executable (.exe) file to the newly created folder.</li>
+              <li>Copy the path to the DermaAI folder in your program files and add it to your environmental variable path of your system.</li>
+              <li>
+                Open a terminal and type 
+                 <code className="bg-gray-200 dark:bg-gray-800 px-2 py-1 mt-1 rounded text-white">
+                  dermaai --help
+                </code>
+                . It will take about 15 seconds and show a valid response 
+                </li>
             </ol>
           </section>
 
