@@ -226,20 +226,56 @@ export default function Docs() {
               CLI Usage
             </h2>
             <p>After installation, you can run predictions and export reports:</p>
+            <h3 className="text-3xl font-semibold mb-4 mt-10">Offline mode</h3>
             <ul className="list-disc pl-6 mt-3 space-y-2">
               <li>
-                Run prediction:
+                Run prediction single file:
                 <code className="block bg-gray-200 dark:bg-gray-800 px-2 py-1 mt-1 rounded text-white">
-                  dermaai predict run --images-source test_images/ --output-format pdf
+                  dermaai predict run --mode offline --model-version 3 --images test_images.jpg  --output-path test_path/ --output-filename test_result --output-format pdf
                 </code>
+                Export results in JSON, CSV, or PDF formats.
               </li>
               <li>
-                Check available models:
+                Run prediction batch file:
                 <code className="block bg-gray-200 dark:bg-gray-800 px-2 py-1 mt-1 rounded text-white">
-                  dermaai models list
+                  dermaai predict run --mode offline --model-version 3 --images-source test_directory/test_images.json  --output-path test_path/ --output-filename test_result --output-format pdf
                 </code>
+
+                Export results in JSON, CSV, or PDF formats.
+              </li>
+              <li>
+                The result will be save imediately after the query is done executing, saving your result as described in the arguments. If no filaname, path, and format was provided, the default(filename: result, path: current, and format: json) will be applied
+              </li>
+            </ul>
+
+            <h3 className="text-3xl font-semibold mb-4 mt-10">Online mode</h3>
+            <ul className="list-disc pl-6 mt-3 space-y-2">
+              <li>
+                Run prediction single file:
+                <code className="block bg-gray-200 dark:bg-gray-800 px-2 py-1 mt-1 rounded text-white">
+                  dermaai predict run --mode online --model-version 3 --images test_images.jpg --output-format pdf
+                </code>
+
+                Export results in JSON, CSV, or PDF formats.
+              </li>
+              <li>
+                Run prediction batch file:
+                <code className="block bg-gray-200 dark:bg-gray-800 px-2 py-1 mt-1 rounded text-white">
+                  dermaai predict run --mode online --model-version 3 --images-source test_directory/test_images.json --output-format pdf
+                </code>
+
+                Export results in JSON, CSV, or PDF formats.
+              </li>
+              <li>
+                Check Result:
+                <code className="block bg-gray-200 dark:bg-gray-800 px-2 py-1 mt-1 rounded text-white">
+                  dermai result get request_id --output-format pdf
+                </code>
+
+                The result will be save imediately after the query is done executing, saving your result as described in the arguments. If no filaname, path, and format was provided, the default(filename: result, path: current, and format: json) will be applied
               </li>
               <li>Export results in JSON, CSV, or PDF formats.</li>
+              <li>In the absence of or slow internet connection, the inference will fall back to offline mode and the user will be alertd in the terminal</li>
             </ul>
           </section>
         </div>
